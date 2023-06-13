@@ -6,6 +6,8 @@
 
 :root{
     --index: calc(1vw + 1vh);
+    transition: 1.5s cubic-bezier(.13,.52,.94,.5);
+    --window-widht: calc(1vw);
 }
 
 
@@ -46,6 +48,7 @@ header{
     transform-style: preserve-3d;
     will-change: transform;
     transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+    /*transform: transform var(--transition);*/
 }
 .layers__item{
     position: absolute;
@@ -74,4 +77,56 @@ header{
 }
 .layers-6{
     transform: translateZ(380px);
+}
+
+.main-text{
+    font-size: calc(var(--index) * 2.9);
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: calc(var(--index) * 5.5);
+
+}
+
+.main-text span{
+    display: block;
+}
+
+.text__p{
+    text-transform: none;
+    font-family: merriweather-3d;
+    font-size: calc(var(--index) * 0.8);
+}
+
+#navbar{
+    box-sizing: content-box;
+    height: 0;
+    border-bottom: 100px solid rgba(0, 0, 0, .4);
+    color: black;
+    transform: rotateX(180deg);
+    margin-top: -50px;
+    width: 1400px;
+    padding-left: calc(var(--window-widht) * 33);
+}
+nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+nav a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 15px 25px;
+    transform: rotateX(180deg);
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: calc(var(--index) * 0.5);
+}
+nav a:hover{
+    background: rgba(101, 101, 228, .55);
+    color: black;
+    border-radius: 5px;
 }
