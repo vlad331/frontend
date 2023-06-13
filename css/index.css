@@ -105,7 +105,7 @@ header{
     transform: rotateX(180deg);
     margin-top: -50px;
     width: 1400px;
-    padding-left: calc(var(--window-widht) * 33);
+    padding-left: calc(var(--window-widht) * 37.8);
 }
 nav{
     position: fixed;
