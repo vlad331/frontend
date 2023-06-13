@@ -45,7 +45,7 @@ header{
     min-height: 500px;
     transform-style: preserve-3d;
     will-change: transform;
-    transform: rotateX(var(--move-x)) rotateY(var(--move-y));
+    transform: rotateX(var(--move-y)) rotateY(var(--move-x));
 }
 .layers__item{
     position: absolute;
