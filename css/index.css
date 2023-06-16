@@ -130,3 +130,71 @@ nav a:hover{
     color: black;
     border-radius: 5px;
 }
+
+body{
+    background: linear-gradient(black,white);
+}
+.about-minecraft{
+    width: 80%;
+    margin-left: 10%;
+    font-size: calc(var(--index) * 0.8);
+    text-align: center;
+    margin-top: calc(var(--index) * 6);
+    letter-spacing: calc(var(--index) * -0.07);
+}
+.gallery{
+    --gallery-margin: calc(var(--index) * 6);
+    margin: var(--gallery-margin) 0 var(--gallery-margin) 2.5%;
+    background-color: rgba(62, 186, 218, 0.37);
+    border-radius: 15px;
+    width: 95%;
+}
+.gallery__caption{
+    text-align: center;
+    font-family: merriweather-3d;
+    font-size: calc(var(--index) * 1.5);
+    text-transform: uppercase;
+    padding-top: calc(var(--index) * 1.75 );
+    padding-top: var(--index);
+}
+.gallery__container{
+    position: relative;
+    height: 340px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gallery__card__pic{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 2px solid black;
+}
+.gallery__card__pic:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.gallery__cards{
+    width: 90%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+
+
+
+
+.gallery__button{
+    position: relative;
+    width: 6%;
+    height: 50%;
+    background-color: rgba(32, 200, 241, 0.76);
+    border-radius: 15px;
+    outline: none;
+    border: none;
+}
+.gallery__button:hover{
+    background-color: rgba(26, 149, 180, 0.411);
+    cursor: pointer;
+}
