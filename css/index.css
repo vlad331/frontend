@@ -108,6 +108,7 @@ header{
     padding-left: calc(var(--window-widht) * 37.8);
 }
 nav{
+    z-index: 1;
     position: fixed;
     top: 0;
     display: flex;
@@ -144,7 +145,7 @@ body{
 }
 .gallery{
     --gallery-margin: calc(var(--index) * 6);
-    margin: var(--gallery-margin) 0 var(--gallery-margin) 2.5%;
+    margin: var(--gallery-margin) 0 var(--gallery-margin)2.5%;
     background-color: rgba(62, 186, 218, 0.37);
     border-radius: 15px;
     width: 95%;
@@ -170,6 +171,7 @@ body{
     object-fit: cover;
     border-radius: 10%;
     border: 2px solid black;
+    transition: 0.1s ease-in-out;
 }
 .gallery__card__pic:hover{
     transform: scale(1.1);
@@ -180,9 +182,6 @@ body{
     justify-content: space-evenly;
     display: flex;
 }
-
-
-
 
 
 .gallery__button{
@@ -197,4 +196,37 @@ body{
 .gallery__button:hover{
     background-color: rgba(26, 149, 180, 0.411);
     cursor: pointer;
+}
+.gallery__button img{
+    width: 50%;
+
+}
+.gallery__button__left img{
+    transform: rotateZ(180deg);
+}
+footer{
+    overflow: hidden;
+    z-index: 1;
+    display: grid;
+    position: relative;
+    height: calc(var(--index) * 15);
+    background: #00000000;
+}
+#bubbles{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: calc(var(--index) * 15);
+    margin-top: calc(var(--index) * 5);
+}
+.bubble{
+    z-index: 0;
+    position: absolute;
+    left: var(--left);
+    background: var(--footer-background);
+    border-radius: 100%;
+    -webkit-animation:bubble-size var(--time, 4s) ease-in infinite var(--delay,0s),bubble-move var(--time,4s) ease-in infinite var(--delay,0s);
+            animation:bubble-size var(--time, 4s) ease-in infinite var(--delay,0s),bubble-move var(--time,4s) ease-in infinite var(--delay,0s);
+    transform: translate(-50%,100%);
 }
