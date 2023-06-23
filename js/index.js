@@ -55,3 +55,21 @@ gallery_button_left.addEventListener('click', e => {
     }
     add_card(card_images[card_index], 'left')
 })
+
+let bubbels = document.getElementById("bubbles")
+for(let i = 0;i<150;i++){
+    let bubble = document.createElement('div')
+    bubble.classList.add("bubble")
+    Object.assign(bubble, {
+        style:`
+        --size: ${Math.random() * 4 + 2}rem;
+        --left: ${Math.random() * 104 - 2}%;
+        --time: ${Math.random() * 2 + 2}s;
+        --delay: -${Math.random() * 2 + 2}s;
+        `
+    })
+    bubbels.append(bubble)
+}
+
+
+
