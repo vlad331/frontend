@@ -314,12 +314,25 @@ footer .content{
     font-size: calc(var(--index) * 0.8);
     letter-spacing: calc(var(--index) * -0.02);
     z-index: 1;
-
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: calc(var(--index) * 6);
 }
+
 footer .content p{
     text-align: center;
-    margin-top: calc(var(--index) * 6);
     color: white;
+
+}
+
+footer .content a{
+    text-decoration: none;
+    color: white; 
+    transition: 0.2s;
+}
+
+footer .content a:hover{
+    transform: scale(1.2);
 
 }
 

@@ -27,7 +27,7 @@ let card_images = [
         'images\\entities\\card1.png',
         'хранитель',
         'охраняет скверну',
-        'test.html',
+        'Zombie.html',
     ),
     new Image(
         'images\\entities\\card2.png',
