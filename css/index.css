@@ -107,7 +107,7 @@ header{
     color: black;
     transform: rotateX(180deg);
     margin-top: -50px;
-    width: 1400px;
+    width: calc(var(--index) * 41.5);
     padding-left: calc(var(--window-widht) * 37.8);
 }
 nav{
